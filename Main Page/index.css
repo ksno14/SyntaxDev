@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #1e1e1e;
+  --secondary-color: #edf2fc;
+  --transition-duration: 0.8s;
+}
+
+.dark-theme {
+  --primary-color: #edf2fc;
+  --secondary-color: #1e1e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: var(--primary-color);
+  transition: background-color var(--transition-duration);
+}
+
+header {
+  display: flex;
+  height: 6.25rem;
+  padding: 3.125rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  flex: 1;
+  text-align: center;
+}
+
+#colorMode {
+  height: 2.5rem;
+  cursor: pointer;
+}
